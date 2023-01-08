@@ -1,5 +1,6 @@
 # O-RAN_CMF
-Conflict Mitigation Framework for O-RAN
+Conflict Mitigation Framework and Conflict Detection in O-RAN nRT-RIC
+ComMag 2023
 
 ## Simulation scenario
 1. base stations and simulation area:
@@ -67,6 +68,59 @@ Conflict Mitigation Framework for O-RAN
         - rain margin: 0 dB
 
 6. RIC configuration:
+    - all base stations are managed with a single nRT-RIC; NRT-RIC is not simulated
+    - 2 xApps are deployed simultaneously: Mobility Robustness Optimizaztion (MRO) and Mobility Load Balancing (MLB)
+    - MRO monitors handover statistics of each base station and modifies handover Hysteresis and Time-To-Trigger parameters to minimize the number of Radio Link Failures (RLFs) and ping-pong handovers (i.e., handovers that from BS #1 to BS #2 and then from BS #2 to BS #1 happening within a set period)
+        - the ping-pong handover period in the simulation scenario is 10 seconds
 
+| Ping-pong HO ratio range | TTT value (s) |
+| --- | --- |
+| 0.00% - 26.67% | 0.08 |
+| 26.67% - 33.33% | 0.1 |
+| 33.33% - 40.00% | 0.128 |
+| 40.00% - 46.67% | 0.16 |
+| 46.67% - 53.33% | 0.256 |
+| 53.33% - 60.00% | 0.32 |
+| 60.00% - 66.67% | 0.48 |
+| 66.67% - 73.33% | 0.512 |
+| 73.33% - 80.00% | 0.64 |
+| 80.00% - 86.67% | 1.024 |
+| 86.67% - 93.33% | 1.28 |
+| 93.33% - 100.00% | 2.56 |
+
+| RLF ratio range | Hysteresis value (dB) |
+| --- | --- |
+| 0.00% - 15.00% | 1 |
+| 15.00% - 20.00% | 1.5 |
+| 20.00% - 25.00% | 2 |
+| 25.00% - 30.00% | 2.5 |
+| 30.00% - 35.00% | 3 |
+| 35.00% - 40.00% | 3.5 |
+| 40.00% - 45.00% | 4 |
+| 45.00% - 50.00% | 4.5 |
+| 50.00% - 55.00% | 5 |
+| 55.00% - 60.00% | 5.5 |
+| 60.00% - 65.00% | 6 |
+| 65.00% - 70.00% | 6.5 |
+| 70.00% - 75.00% | 7 |
+| 75.00% - 80.00% | 7.5 |
+| 80.00% - 85.00% | 8 |
+| 85.00% - 90.00% | 8.5 |
+| 90.00% - 95.00% | 9 |
+| 95.00% - 100.00% | 9.5 |
+
+
+    - MLB balances load of the base stations in the network, choosing Cell Individual Offset (CIO) values according to load of the base stations
+        - 
+
+| BS load range | CIO value (dB) |
+| --- | --- |
+| 0.00% - 45.45% | 0 |
+| 45.45% - 54.55% | 0.5 |
+| 54.55% - 63.64% | 1 |
+| 63.64% - 72.73% | 1.5 |
+| 72.73% - 81.82% | 2 |
+| 81.82% - 90.91% | 2.5 |
+| 90.91% - 100.00% | 3 |
 
 7. simulation results:
