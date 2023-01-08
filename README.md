@@ -72,7 +72,12 @@ ComMag 2023
     - 2 xApps are deployed simultaneously: Mobility Robustness Optimizaztion (MRO) and Mobility Load Balancing (MLB)
     - MRO monitors handover statistics of each base station and modifies handover Hysteresis and Time-To-Trigger parameters to minimize the number of Radio Link Failures (RLFs) and ping-pong handovers (i.e., handovers that from BS #1 to BS #2 and then from BS #2 to BS #1 happening within a set period)
         - the ping-pong handover period in the simulation scenario is 10 seconds
+        - handover TTT parameter values are chosen for specific base stations based on their ratio of ping-pong handovers to all handovers from last 240 seconds (table with details below)
+        - handover hysteresis parameter values are chosen for specific base stations based on their ratio of radio link failures (RLF) to all handovers from last 240 seconds (table with details below)
+    - MLB balances load of the base stations in the network, choosing Cell Individual Offset (CIO) values according to load of the base stations
+        - handover Cell Individual Offset values are chosen for specific base stations based on their current load (i.e., number of currently utilized physical resource blocks to all physical resource blocks) (table with details below)
 
+MRO - ping-pong handover ratio to TTT value mapping
 | Ping-pong HO ratio range | TTT value (s) |
 | --- | --- |
 | 0.00% - 26.67% | 0.08 |
@@ -88,6 +93,7 @@ ComMag 2023
 | 86.67% - 93.33% | 1.28 |
 | 93.33% - 100.00% | 2.56 |
 
+MRO - RLF ratio to hysteresis value mapping
 | RLF ratio range | Hysteresis value (dB) |
 | --- | --- |
 | 0.00% - 15.00% | 1 |
@@ -109,10 +115,7 @@ ComMag 2023
 | 90.00% - 95.00% | 9 |
 | 95.00% - 100.00% | 9.5 |
 
-
-    - MLB balances load of the base stations in the network, choosing Cell Individual Offset (CIO) values according to load of the base stations
-        - 
-
+MLB - BS load to CIO value mapping
 | BS load range | CIO value (dB) |
 | --- | --- |
 | 0.00% - 45.45% | 0 |
