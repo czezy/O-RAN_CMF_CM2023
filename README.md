@@ -2,7 +2,13 @@
 Conflict Mitigation Framework and Conflict Detection in O-RAN nRT-RIC
 ComMag 2023
 
-## Simulation scenario
+## Simulation description
+0. repository structure:
+    - /README.md 
+    - /figures/
+    - /json_messages/
+    - /simulation_results/
+    
 1. base stations and simulation area:
     - 19 base stations (BS) distributed on a hexagonal grid
     - distance between each BS is equal to 600 meters
