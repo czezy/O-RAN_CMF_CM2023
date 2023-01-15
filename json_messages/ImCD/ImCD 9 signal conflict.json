@@ -1,0 +1,55 @@
+{
+  "source": "ImCD",
+  "command": "Notify",
+  "conflictType": "implicit",
+  "timestamp": "Wed Jan 01 00:00:00.084 2020",
+  "degradKPI": "AverageDLThroughput",
+  "degradOccurrences": [
+    {
+      "timestamp": "Tue Dec 31 23:59:59.890 2019",
+      "decisions": [
+        {
+          "source": "xApp1",
+          "command": "Modify",
+          "targetParameter": "TxPower",
+          "targetValue": "32",
+          "targetCell": "000-000-000-000001",
+          "timestamp": "Tue Dec 31 23:59:59.800 2019",
+          "controlTimespan": "500"
+        },
+        {
+          "source": "xApp2",
+          "command": "Modify",
+          "targetParameter": "HOMeasurementOffset",
+          "targetValue": "2",
+          "targetCell": "000-000-000-000022",
+          "timestamp": "Tue Dec 31 23:59:59.670 2019",
+          "controlTimespan": "650"
+        }
+      ]
+    },
+    {
+      "timestamp": "Tue Dec 31 23:59:57.762 2019",
+      "decisions": [
+        {
+          "source": "xApp1",
+          "command": "Modify",
+          "targetParameter": "TxPower",
+          "targetValue": "30",
+          "targetCell": "000-000-000-000001",
+          "timestamp": "Tue Dec 31 23:59:57.560 2019",
+          "controlTimespan": "500"
+        },
+        {
+          "source": "xApp2",
+          "command": "Modify",
+          "targetParameter": "HOMeasurementOffset",
+          "targetValue": "3",
+          "targetCell": "000-000-000-000022",
+          "timestamp": "Tue Dec 31 23:59:57.020 2019",
+          "controlTimespan": "800"
+        }
+      ]
+    }
+  ]
+}

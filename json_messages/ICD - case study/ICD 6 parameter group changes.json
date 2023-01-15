@@ -1,0 +1,54 @@
+{
+  "table": "RecentlyChangedParameterGroups",
+  "timestamp": "Wed Jan 01 00:00:00.080 2020",
+  "records": [
+    {
+      "recordId": "0",
+      "content": {
+        "groupName": "CellAffectQoS",
+        "messages": [
+          {
+            "source": "xApp1",
+            "command": "Modify",
+            "targetParameter": "TxPower",
+            "targetValue": "32",
+            "targetCell": "000-000-000-000001",
+            "timestamp": "Wed Jan 01 00:00:00.000 2020",
+            "controlTimespan": "500"
+          }
+        ]
+      }
+    },
+    {
+      "recordId": "1",
+      "content": {
+        "groupName": "CellAffectHandoverBoundary",
+        "messages": 
+		[
+          {
+            "source": "xApp1",
+            "command": "Modify",
+            "targetParameter": "HOMeasurementOffset",
+            "targetValue": "0.5",
+            "targetCell": "000-000-000-000001",
+			"data":
+			{
+			  "HOCell": "000-000-000-000002"
+		    }
+            "timestamp": "Wed Jan 01 00:00:00.000 2020",
+            "controlTimespan": "500"
+          },
+		  {
+            "source": "xApp2",
+            "command": "Modify",
+            "targetParameter": "HOHysteresis",
+            "targetValue": "2",
+            "targetCell": "000-000-000-000001",
+            "timestamp": "Tue Dec 31 23:59:59.890 2019",
+            "controlTimespan": "500"
+          }
+        ]
+      }
+    }
+  ]
+}

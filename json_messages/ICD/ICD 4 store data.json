@@ -1,0 +1,32 @@
+{
+  "command": "Store",
+  "table": "RecentlyChangedParameterGroups",
+  "content": {
+    "changedParameterGroups": [
+      {
+        "groupName": "CellAffectQoS",
+        "message": {
+          "source": "xApp1",
+          "command": "Modify",
+          "targetParameter": "TxPower",
+          "targetValue": "32",
+          "targetCell": "000-000-000-000001",
+          "timestamp": "Wed Jan 01 00:00:00.000 2020",
+          "controlTimespan": "500"
+        }
+      },
+      {
+        "groupName": "CellAffectHandoverBoundary",
+        "message": {
+          "source": "xApp1",
+          "command": "Modify",
+          "targetParameter": "TxPower",
+          "targetValue": "32",
+          "targetCell": "000-000-000-000001",
+          "timestamp": "Wed Jan 01 00:00:00.000 2020",
+          "controlTimespan": "500"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "source": "ICD",
+  "command": "Notify",
+  "conflictType": "indirect",
+  "timestamp": "Wed Jan 01 00:00:00.086 2020",
+  "groupName": "CellAffectHandoverBoundary",
+  "decisions": [
+    {
+      "content": {
+        "source": "xApp2",
+        "command": "Modify",
+        "targetParameter": "HOMeasurementOffset",
+        "targetValue": "2",
+        "targetCell": "000-000-000-000001",
+        "timestamp": "Tue Dec 31 23:59:59.890 2019",
+        "controlTimespan": "500"
+      }
+    },
+    {
+      "content": {
+        "source": "xApp1",
+        "command": "Modify",
+        "targetParameter": "TxPower",
+        "targetValue": "32",
+        "targetCell": "000-000-000-000001",
+        "timestamp": "Wed Jan 01 00:00:00.000 2020",
+        "controlTimespan": "500"
+      }
+    }
+  ]
+}

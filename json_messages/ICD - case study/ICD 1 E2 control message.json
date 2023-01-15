@@ -1,0 +1,13 @@
+{
+  "source": "xApp1",
+  "command": "Modify",
+  "targetParameter": "HOMeasurementOffset",
+  "targetValue": "0.5",
+  "targetCell": "000-000-000-000001",
+  "data":
+  {
+	"HOCell": "000-000-000-000002"
+  }
+  "timestamp": "Wed Jan 01 00:00:00.000 2020",
+  "controlTimespan": "500"
+}

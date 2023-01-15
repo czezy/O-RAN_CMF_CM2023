@@ -1,0 +1,50 @@
+{
+  "table": "ParameterGroups",
+  "timestamp": "Wed Jan 01 00:00:00.040 2020",
+  "records": [
+    {
+      "recordId": "0",
+      "content": {
+        "groupName": "CellAffectQoS",
+        "parameters": [
+          {
+            "changeTarget": "Cell",
+            "parameterName": "TxPower"
+          },
+          {
+            "changeTarget": "Cell",
+            "parameterName": "ElectricalTilt"
+          }
+        ]
+      }
+    },
+    {
+      "recordId": "1",
+      "content": {
+        "groupName": "CellAffectHandoverBoundary",
+        "parameters": [
+          {
+            "changeTarget": "Cell",
+            "parameterName": "ElectricalTilt"
+          },
+          {
+            "changeTarget": "Cell",
+            "parameterName": "HOMeasurementOffset"
+          },
+          {
+            "changeTarget": "Cell",
+            "parameterName": "TxPower"
+          },
+		  {
+            "changeTarget": "Cell",
+            "parameterName": "HOTimeToTrigger"
+          },
+		  {
+            "changeTarget": "Cell",
+            "parameterName": "HOHysteresis"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": "Store",
+  "table": "RecentlyChangedParameters",
+  "recordId": "1",
+  "content": {
+    "source": "xApp1",
+    "command": "Modify",
+    "targetParameter": "TxPower",
+    "targetValue": "32",
+    "targetCell": "000-000-000-000001",
+    "timestamp": "Wed Jan 01 00:00:00.000 2020",
+    "controlTimespan": "500"
+  }
+}

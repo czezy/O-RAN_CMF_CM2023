@@ -1,0 +1,30 @@
+{
+  "command": "Store",
+  "table": "RANKPIDegradationOccurences",
+  "content": {
+    "KPI": "AverageDLThroughput",
+    "timestamp": "Tue Dec 31 23:59:59.890 2019",
+    "message": {
+      "conflictingDecisions": [
+        {
+          "source": "xApp1",
+          "command": "Modify",
+          "targetParameter": "TxPower",
+          "targetValue": "32",
+          "targetCell": "000-000-000-000001",
+          "timestamp": "Tue Dec 31 23:59:59.800 2019",
+          "controlTimespan": "500"
+        },
+        {
+          "source": "xApp2",
+          "command": "Modify",
+          "targetParameter": "HOMeasurementOffset",
+          "targetValue": "2",
+          "targetCell": "000-000-000-000022",
+          "timestamp": "Tue Dec 31 23:59:59.670 2019",
+          "controlTimespan": "650"
+        }
+      ]
+    }
+  }
+}

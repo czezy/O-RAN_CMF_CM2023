@@ -1,0 +1,23 @@
+{
+  "source": {
+    "name": "CU-UP1",
+    "id": "000-000-000"
+  },
+  "event": {
+    "id": "Perf00000001",
+    "timestamp": "Tue Dec 31 23:59:59.890 2019",
+    "type": "perfStream",
+    "data": {
+      "attributes": [
+        {
+          "name": "AverageDLThroughputMbps",
+          "value": "12"
+        },
+        {
+          "name": "AverageULThroughputMbps",
+          "value": "5"
+        }
+      ]
+    }
+  }
+}
