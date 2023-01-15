@@ -1,8 +1,0 @@
-{
-  "command": "Remove",
-  "table": "RANKPIDegradationOccurences",
-  "recordIds": [
-    "0",
-    "1"
-  ]
-}
