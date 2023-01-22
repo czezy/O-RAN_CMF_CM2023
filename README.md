@@ -141,7 +141,7 @@ MLB - BS load to CIO value mapping
     - first 150 seconds of the simulation were not considered in calculation of final results for the sake of disregarding initial network instability
     - network performance indicators were polled every second
     - the following network performance indicators are included in the results:
-        - mean base station load ("avail" files; load = 1-avail)
+        - mean base station load ("avail" files; load = 1 - avail)
         - mean user satisfaction ("satis" files)
         - number of call blockades ("cb" files)
         - number of RLFs ("rlf" files)
