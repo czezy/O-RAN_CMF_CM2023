@@ -75,7 +75,7 @@ ComMag 2023
 
 6. RIC configuration:
     - all base stations are managed with a single nRT-RIC; NRT-RIC is not simulated
-    - 2 xApps are deployed simultaneously: Mobility Robustness Optimizaztion (MRO) and Mobility Load Balancing (MLB)
+    - 2 xApps are deployed simultaneously in the nRT-RIC: Mobility Robustness Optimizaztion (MRO) and Mobility Load Balancing (MLB)
     - MRO monitors handover statistics of each base station and modifies handover Hysteresis and Time-To-Trigger parameters to minimize the number of Radio Link Failures (RLFs) and ping-pong handovers (i.e., handovers that from BS #1 to BS #2 and then from BS #2 to BS #1 happening within a set period)
         - the ping-pong handover period in the simulation scenario is 10 seconds
         - handover TTT parameter values are chosen for specific base stations based on their ratio of ping-pong handovers to all handovers from last 240 seconds (table with details below)
@@ -133,3 +133,18 @@ MLB - BS load to CIO value mapping
 | 90.91% - 100.00% | 3 |
 
 7. simulation results:
+    - all raw results of the simulation are included in the "simulation_results" directory of this branch
+    - simulation was conducted for three CMF modes:
+        - CM disabled ("no_CM" directory) - no conflict detection and resolution measures in place
+        - MRO prioritized ("prio_MRO" directory) - MRO xApp takes precedence over MLB xApp in case of a conflict
+        - MLB prioritized ("prio_MLB" directory) - MLB xApp takes precedence over MRO xApp in case of a conflict
+    - first 150 seconds of the simulation were not considered in calculation of final results for the sake of disregarding initial network instability
+    - network performance indicators were polled every second
+    - the following network performance indicators are included in the results:
+        - mean base station load ("avail" files; load = 1-avail)
+        - mean user satisfaction ("satis" files)
+        - number of call blockades ("cb" files)
+        - number of RLFs ("rlf" files)
+        - number of handovers ("ho" files)
+        - number of ping-pong handovers ("pp" files)
+    - chosen parameters of base stations were polled every second ("bs" files)
